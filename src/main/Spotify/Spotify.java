@@ -1,3 +1,5 @@
+package main.Spotify;
+
 import java.util.Scanner;
 
 public class Spotify {
