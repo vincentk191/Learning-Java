@@ -1,4 +1,4 @@
-package main.Spotify;
+package Spotify;
 
 public class Playlist {
 }

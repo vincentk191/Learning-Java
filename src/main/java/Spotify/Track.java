@@ -1,4 +1,6 @@
-package main.Spotify;
+package Spotify;
 
 public abstract class Track {
+
+
 }
