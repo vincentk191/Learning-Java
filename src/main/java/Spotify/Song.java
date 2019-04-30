@@ -1,5 +1,6 @@
 package Spotify;
 
+import java.io.IOException;
 import java.time.Duration;
 
 public class Song extends Track {
@@ -8,8 +9,15 @@ public class Song extends Track {
     private String album;
     private Duration length;
 
-    public Song (){
+    public String readTrack(Track track) throws IOException {
+        String s = "";
 
+        s += "Song: " + name + "\n";
+        s += "Artist: " + artist + "\n";
+        s += "Album: " + album + "\n";
+        s += "Duration: " + length + "\n";
+
+        return s;
     }
 
     public Song(String name, String artist, String album, Duration length) {
@@ -18,6 +26,8 @@ public class Song extends Track {
         this.album = album;
         this.length = length;
     }
+
+
 
     public String getName() {
         return name;
