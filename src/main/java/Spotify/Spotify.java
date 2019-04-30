@@ -10,34 +10,38 @@ public class Spotify {
         Scanner input = new Scanner(System.in);
 
         System.out.println("Please enter an option: ");
-        printing.printOptions();
 
-        int option = fetchInput.userInput(input);
+        int option = 0;
 
-        while (option == -1) {
+        while (option != 6) {
             printing.printOptions();
             option = fetchInput.userInput(input);
+            switch(option){
+                case 1:
+                    System.out.println("Listing all songs");
+                    break;
+                case 2:
+                    System.out.println("Listing all songs in playlist");
+                    break;
+                case 3:
+                    System.out.println("Added playlist");
+                    break;
+                case 4:
+                    System.out.println("Added song to playlist");
+                    break;
+                case 5:
+                    System.out.println("Removed song");
+                    break;
+                case 6:
+                    System.out.println("Thank you for playing!");
+                    return;
+                case -2:
+                    System.out.println("Please restart the program.");
+                    return;
+            }
         }
 
-        switch(option){
-            case 1:
-                break;
-            case 2:
-                break;
-            case 3:
-                break;
-            case 4:
-                break;
-            case 5:
-                break;
-            case 6:
-                break;
-            case -2:
-                System.out.println("Please restart the program.");
-                break;
-        }
 
-        System.out.println("Thank you for playing!");
     }
 
 
