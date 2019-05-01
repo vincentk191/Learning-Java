@@ -19,6 +19,20 @@ public class Playlist {
 
     }
 
+    @Override
+    public String toString(){
+        String s = "";
+        if(!playlist.isEmpty()){
+            return s;
+        } else {
+            for(Track t : playlist){
+                s += t.toString();
+            }
+
+            return s;
+        }
+    }
+
     public ArrayList<Track> getPlaylist() {
         return playlist;
     }
